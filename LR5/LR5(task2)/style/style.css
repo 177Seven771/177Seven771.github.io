@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin: 30px 0 10px 0;
+}
+
+.spacer {
+    height: 40px;
+}
+
+
+.bg-green { background-color: #76bc43; }
+.bg-light-green { background-color: #e2efda; }
+.bg-white { background-color: #ffffff; }
+
+
+.mark-sheet {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #333;
+}
+
+.mark-sheet th, .mark-sheet td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-title {
+    background-color: #76bc43;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.table-sub-header th {
+    background-color: #e2efda;
+    color: #333;
+    font-weight: normal;
+}
+
+
+.mark-sheet tbody tr:nth-child(even) {
+    background-color: #e2efda;
+}
+
+.mark-sheet tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+
+.float-mark-sheet {
+    width: 100%;
+    border: 1px solid #333;
+}
+
+.f-row {
+    overflow: hidden;
+    width: 100%;
+}
+
+.f-title {
+    background-color: #76bc43;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+}
+
+.f-sub-header {
+    background-color: #e2efda;
+}
+
+.f-cell {
+    float: left;
+    width: 16.66%; 
+    padding: 8px;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    min-height: 35px;
+}
+
+.f-cell:last-child {
+    border-right: none;
+}
+
+
+.float-mark-sheet .f-row:nth-child(even):not(.f-title) {
+    background-color: #ffffff;
+}
+
+.float-mark-sheet .f-row:nth-child(odd):not(.f-title) {
+    background-color: #e2efda;
+}

@@ -1,0 +1,81 @@
+/* Загальні стилі для сторінки */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.method-box {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Спільні стилі для тексту всередині кіл */
+.circle-shadow, .circle-gradient, .circle-pseudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 50%; 
+}
+
+/* Спосіб 1: Використання декількох тіней */
+.circle-shadow {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 0 0 40px #ffff00, 0 0 0 80px #0000ff;
+    margin: 80px auto;
+}
+
+/* Спосіб 2: Радіальний градієнт */
+.circle-gradient {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    background: radial-gradient(circle, 
+        white 0%, white 20%,      
+        #ffff00 20%, #ffff00 60%, 
+        #0000ff 60%, #0000ff 100% 
+    );
+}
+
+/* Спосіб 3: Одночасне використання двох псевдоелементів  */
+.circle-pseudo {
+    width: 260px;
+    height: 260px;
+    background-color: #0000ff; 
+    position: relative; 
+    z-index: 1;
+}
+
+
+.circle-pseudo:before {
+    content: ""; 
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: #ffff00;
+    border-radius: 50%;
+    z-index: -1; 
+}
+
+
+.circle-pseudo:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Верстка таблиці двома способами</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>1. Використання елемента table;</h2>
+        <table class="html-table">
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Q1</th>
+                    <th>Q2</th>
+                    <th>Q3</th>
+                    <th>Q4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="bg-blue-dark">Microsoft</td>
+                    <td>20.3</td>
+                    <td>30.5</td>
+                    <td>23.5</td>
+                    <td>40.3</td>
+                </tr>
+                <tr>
+                    <td class="bg-blue-dark">Google</td>
+                    <td>50.2</td>
+                    <td>40.63</td>
+                    <td>45.23</td>
+                    <td>39.3</td>
+                </tr>
+                <tr>
+                    <td class="bg-blue-dark">Apple</td>
+                    <td>25.4</td>
+                    <td>30.2</td>
+                    <td>33.3</td>
+                    <td>36.7</td>
+                </tr>
+                <tr>
+                    <td class="bg-blue-dark">IBM</td>
+                    <td>20.4</td>
+                    <td>15.6</td>
+                    <td>22.3</td>
+                    <td>29.3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="spacer"></div>
+
+        <h2>2. Використання властивості float</h2>
+        <div class="float-table">
+            <div class="f-row f-header">
+                <div class="f-cell">Company</div>
+                <div class="f-cell">Q1</div>
+                <div class="f-cell">Q2</div>
+                <div class="f-cell">Q3</div>
+                <div class="f-cell">Q4</div>
+            </div>
+            <div class="f-row">
+                <div class="f-cell f-side">Microsoft</div>
+                <div class="f-cell">20.3</div>
+                <div class="f-cell">30.5</div>
+                <div class="f-cell">23.5</div>
+                <div class="f-cell">40.3</div>
+            </div>
+            <div class="f-row">
+                <div class="f-cell f-side">Google</div>
+                <div class="f-cell">50.2</div>
+                <div class="f-cell">40.63</div>
+                <div class="f-cell">45.23</div>
+                <div class="f-cell">39.3</div>
+            </div>
+            <div class="f-row">
+                <div class="f-cell f-side">Apple</div>
+                <div class="f-cell">25.4</div>
+                <div class="f-cell">30.2</div>
+                <div class="f-cell">33.3</div>
+                <div class="f-cell">36.7</div>
+            </div>
+            <div class="f-row">
+                <div class="f-cell f-side">IBM</div>
+                <div class="f-cell">20.4</div>
+                <div class="f-cell">15.6</div>
+                <div class="f-cell">22.3</div>
+                <div class="f-cell">29.3</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
